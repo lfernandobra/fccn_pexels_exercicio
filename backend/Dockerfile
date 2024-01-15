@@ -8,4 +8,7 @@ WORKDIR /app
 COPY . .
 RUN composer install
 
+# Copiar o arquivo de configuração do Xdebug
+COPY ./xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
+
 CMD php artisan serve --host=0.0.0.0

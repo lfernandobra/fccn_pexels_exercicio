@@ -43,6 +43,10 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\ThrottleRequests::class.':api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
+
+        'telescope' => [
+            \Laravel\Telescope\Http\Middleware\Authorize::class,
+        ],
     ];
 
     /**
@@ -65,4 +69,6 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
     ];
+
+
 }
