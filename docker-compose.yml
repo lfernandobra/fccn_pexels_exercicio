@@ -9,7 +9,7 @@ services:
     volumes:
       - ./backend:/app
 
-  react:
+  frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
