@@ -1,0 +1,4 @@
+.search-container {
+    text-align: center; /* Centraliza os elementos filhos horizontalmente */
+    margin-top: 50px; /* Ajuste conforme necessário para posicionar verticalmente */
+}
